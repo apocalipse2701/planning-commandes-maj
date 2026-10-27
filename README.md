@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.8.1** (27/10/2026).
+Dernière version : **2.8.2** (27/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -10,12 +10,12 @@ Dernière version : **2.8.1** (27/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.8.1
+## Nouveautés de la version 2.8.2
 
 
-**Application Android : correction**
-- Réglages › Commandes par mail : l'adresse mail tapée s'effaçait quand on touchait le champ du mot de passe.
-  - Cause : l'ouverture du clavier redimensionne la fenêtre, et l'application redessinait alors toutes les pages, réglages compris.
-  - Désormais, seul le planning est redessiné : rien de ce qui est en cours de saisie ne s'efface (adresse, mot de passe, expéditeurs, message de confirmation…).
-- Programme PC : aucun changement.
+**Confirmation de réception : seulement pour les commandes reçues par mail (PC et Android)**
+- Le bouton « Confirmer la réception » n'apparaît plus pour un bulletin ajouté à la main (ni partagé depuis une autre application) : seulement pour une commande reçue par mail.
+- Les versions manuelles (sans relevé du mail) n'ont plus cette fonction : ni bouton, ni réglage.
+- Réglages › Confirmation de réception : le champ « Destinataire des bulletins ajoutés à la main » est retiré.
+- PC : Fichier › Confirmer la réception… ne liste que les commandes reçues par mail ; les deux menus de confirmation n'existent que dans la version « mail ».
 
