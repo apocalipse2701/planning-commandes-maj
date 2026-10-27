@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.7.0** (27/10/2026).
+Dernière version : **2.8.0** (27/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -10,22 +10,15 @@ Dernière version : **2.7.0** (27/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.7.0
+## Nouveautés de la version 2.8.0
 
 
-**Confirmer la réception d'une commande à l'expéditeur (PC et Android)**
-- Bouton **Confirmer la réception** sur chaque commande :
-  - **téléphone** : dans les résultats de l'ajout et dans « Commandes importées » ;
-  - **PC** : fenêtre ouverte dès qu'une commande arrive par mail, et Fichier › Confirmer la réception d'une commande….
-- Le message est préparé à partir d'un modèle réglable : Réglages › Confirmation de réception, ou sur le PC Fichier › Message de confirmation….
-  - `{type}`, `{debut}`, `{fin}`, `{edition}` et `{agent}` y sont remplacés.
-  - Il est relu, et modifiable, avant l'envoi.
-- **Version « mail »** : envoi **direct par l'application**, sans ouvrir d'autre application.
-  - Depuis la boîte réglée, avec le même mot de passe.
-  - En réponse au mail reçu, donc dans le même fil de discussion.
-  - Toujours chiffré : SMTP sur le port 465 en SSL, ou 587 avec STARTTLS. Sans chiffrement, rien ne part.
-  - Le serveur d'envoi est rempli d'après le fournisseur (Free, Orange, SFR, Bbox, La Poste, Gmail, Yahoo, iCloud, GMX, Infomaniak) ; il est modifiable dans « Serveur de messagerie ».
-- **Version manuelle** : l'application mail (ou la messagerie du PC) s'ouvre avec le message prêt.
-- **Destinataire** : l'expéditeur du mail reçu (adresse de réponse). Pour un bulletin ajouté à la main, le destinataire est l'adresse réglée ou un expéditeur connu.
-- La commande affiche ensuite « ✓ Réception confirmée à … le … ».
+**Mises à jour depuis un dépôt public dédié (PC et Android)**
+- Les nouvelles versions sont publiées dans un dépôt GitHub **public et séparé**, `planning-commandes-maj`.
+  - Il ne contient que les APK, les exe, une page de téléchargement avec des liens directs et les nouveautés.
+  - Le dépôt du code peut ainsi devenir **privé**.
+- L'application et le programme PC y cherchent leurs mises à jour :
+  - ils affichent le **numéro de version** (2.8.0…) et les **nouveautés** avant d'installer ;
+  - ils vérifient l'**empreinte SHA-256** du fichier téléchargé (fichier abîmé ou incomplet refusé).
+- **Transition automatique** : cette version est aussi publiée à l'ancienne place. Les téléphones et PC déjà installés s'y mettent à jour seuls, puis regardent le nouveau dépôt.
 
