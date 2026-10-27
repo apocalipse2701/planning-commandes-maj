@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.8.3** (27/10/2026).
+Dernière version : **2.8.4** (27/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -12,13 +12,10 @@ Dernière version : **2.8.3** (27/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.8.3
+## Nouveautés de la version 2.8.4
 
 
-**Programme PC : noms des codes perdus quand l'exe est lancé ailleurs (correction)**
-- Un exe téléchargé et lancé depuis « Téléchargements » ne trouvait pas `codes.txt` (resté dans le dossier PlanningPDF) : le planning affichait les codes bruts (`GIV002`) au lieu de leurs noms.
-- Le programme retient maintenant son dossier habituel (celui où se trouve votre `codes.txt`) et s'en sert même lancé ailleurs : codes, dossier « commande », polices.
-- Si aucun dossier n'est encore connu, il demande une fois où il se trouve.
-- La page de téléchargement rappelle de placer l'exe dans le dossier PlanningPDF.
-- Application Android : aucun changement.
+**Application Android : vos codes protégés (correction)**
+- Une copie du planning faite par un programme PC sans vos codes (exe lancé hors de son dossier, voir 2.8.3) remplaçait les codes du téléphone par les codes d'exemple : le planning affichait `GIV002` au lieu de son nom. Une copie qui ne contient que les codes d'exemple ne remplace plus vos codes.
+- Réglages › Codes et couleurs : si le téléphone n'a que les codes d'exemple, un avis le dit et explique comment importer les vôtres (« Importer un codes.txt », ou copie envoyée par le PC). Le menu l'indique aussi.
 
