@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.9.0** (27/10/2026).
+Dernière version : **2.9.1** (27/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,15 +14,13 @@ Dernière version : **2.9.0** (27/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.9.0
+## Nouveautés de la version 2.9.1
 
 
-**Nouvelle application « Planning (lecture) » : votre planning à jour sur le téléphone d'un proche**
-- Nouveau fichier `PlanningCommandes-lecture.apk`, à installer sur le téléphone de la personne qui veut consulter votre planning (conjoint…). Les deux autres versions ne changent pas ; celle-ci s'installe à côté sans les remplacer.
-- Elle affiche le planning (mois, page A4, détail du jour, export PDF/JPEG, agenda), les widgets et les avis « Contrairement » (fond jaune et notification), sans rien pouvoir modifier : pas d'onglet Commandes, ni note, ni grève.
-- Le planning vient de votre téléphone, par votre **kDrive Infomaniak** (WebDAV) : Réglages › **Partage du planning**, à régler sur les deux téléphones avec le même compte, le même dossier et le même **code de partage**.
-- Votre téléphone envoie le planning quelques secondes après chaque changement (commande ajoutée, reçue par mail, note, grève…), et à l'ouverture de l'application. Le téléphone du proche le relit à l'ouverture et toutes les heures, et met ses widgets à jour.
-- Le fichier déposé sur le kDrive est **chiffré** (AES-256) avec le code de partage : sans ce code, il est illisible.
-- Les avis « Contrairement » se valident séparément sur chaque téléphone ; seuls ceux des 14 derniers jours sont montrés au proche.
-- Programme PC : aucun changement (le partage part du téléphone).
+**Partage du planning : mode d'emploi dans l'application (Android)**
+- Réglages › Partage du planning : nouvelle rubrique dépliable « Comment faire ? », avec les étapes pas à pas.
+  - Téléphone principal : offre kDrive avec WebDAV, numéro du kDrive, mot de passe d'application (à copier tout de suite), code de partage, installation de la version lecture chez le proche.
+  - Version lecture : mêmes réglages et même code, notifications, widgets.
+- Elle rappelle aussi : envoi quand l'application est ouverte, changement de code, dossier à créer soi-même si besoin, arrêt du partage.
+- Programme PC : aucun changement.
 
