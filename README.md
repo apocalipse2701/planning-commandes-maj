@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.9.3** (28/10/2026).
+Dernière version : **2.9.4** (28/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,15 +14,15 @@ Dernière version : **2.9.3** (28/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.9.3
+## Nouveautés de la version 2.9.4
 
 
-**Partage du planning : dépôt refusé par le kDrive (correction, Android)**
-- À l'enregistrement, le partage échouait avec « accès refusé par le kDrive pour dépôt du planning ». Quand le dossier n'existe pas encore, kDrive répond « refusé » au lieu de « introuvable » : l'application ne créait donc pas le dossier.
-- Elle le crée maintenant dans ce cas aussi (« Private », puis « Planning partagé »), puis dépose le planning.
-- Si le kDrive refuse encore, le message dit pourquoi :
-  - le dossier de départ n'existe pas : la liste des dossiers présents à la racine du kDrive est affichée, avec le chemin à indiquer ;
-  - tout accès est refusé : l'offre kDrive n'inclut sans doute pas le WebDAV, ou l'identifiant n'est pas l'adresse mail du compte.
-- Même aide sur le téléphone en lecture.
+**Partage du planning par un NAS Synology (Android)**
+- Le partage avec la version lecture peut passer par votre **NAS Synology** : son accès WebDAV (paquet gratuit « WebDAV Server ») sert à la place du kDrive, dont l'offre gratuite n'a pas de WebDAV.
+- Réglages › Partage du planning : choix du serveur **NAS Synology** (proposé d'abord), **kDrive** ou **Autre WebDAV**. Les champs, l'aide et le dossier proposé s'adaptent :
+  - NAS : adresse DDNS (ex. `monnas.synology.me`, port 5006 en HTTPS pris par défaut), utilisateur du NAS, mot de passe, dossier partagé `Planning`.
+- « Comment faire ? » pour le NAS : installer WebDAV Server (HTTPS), créer le dossier partagé et un utilisateur réservé, DDNS et port 5006 sur la box, certificat Let's Encrypt.
+- Messages d'erreur adaptés : NAS injoignable (port non redirigé, NAS éteint), certificat non reconnu, droits de l'utilisateur, WebDAV non autorisé, dossiers partagés visibles.
+- Les adresses en `http://` sont refusées : le mot de passe et le planning ne circulent qu'en HTTPS.
 - Programme PC : aucun changement.
 
