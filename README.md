@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.9.1** (27/10/2026).
+Dernière version : **2.9.2** (28/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,13 +14,10 @@ Dernière version : **2.9.1** (27/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.9.1
+## Nouveautés de la version 2.9.2
 
 
-**Partage du planning : mode d'emploi dans l'application (Android)**
-- Réglages › Partage du planning : nouvelle rubrique dépliable « Comment faire ? », avec les étapes pas à pas.
-  - Téléphone principal : offre kDrive avec WebDAV, numéro du kDrive, mot de passe d'application (à copier tout de suite), code de partage, installation de la version lecture chez le proche.
-  - Version lecture : mêmes réglages et même code, notifications, widgets.
-- Elle rappelle aussi : envoi quand l'application est ouverte, changement de code, dossier à créer soi-même si besoin, arrêt du partage.
-- Programme PC : aucun changement.
+**Publication : l'application « lecture » aussi dans les Releases du dépôt du code**
+- `PlanningCommandes-lecture.apk` n'était publié que dans le dépôt des mises à jour (planning-commandes-maj). Il est maintenant aussi joint à chaque « Version X.Y.Z (fabrication N) » de la page Releases du dépôt du code, avec les deux autres apk.
+- Aucun changement dans les applications ni dans le programme PC.
 
