@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.10.0** (30/10/2026).
+Dernière version : **2.11.0** (30/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,15 +14,15 @@ Dernière version : **2.10.0** (30/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.10.0
+## Nouveautés de la version 2.11.0
 
 
-**Sauvegarde des bulletins sur un NAS ou un kDrive (PC et Android)**
-- Tous les bulletins rangés, avec leurs dossiers année et mois, peuvent être copiés sur un autre support. Seuls les nouveaux ou modifiés partent ; rien n'est effacé à la destination.
-- **Téléphone** : Réglages › **Sauvegarde des bulletins** — NAS Synology, NAS QNAP, kDrive ou autre serveur WebDAV, en HTTPS.
-  - **Sauvegarder maintenant**, **Tout renvoyer**, ou sauvegarde automatique après chaque nouveau bulletin.
-  - **Reprendre le serveur du partage du planning** recopie l'adresse, le compte et le certificat déjà réglés.
-  - Certificat d'origine du NAS ou adresse IP : « Faire confiance à ce certificat », comme pour le partage.
-  - Bouton **Sauvegarder sur le NAS** dans Commandes › Bulletins rangés.
-- **PC** : Fichier › **Sauvegarder les bulletins (NAS, kDrive…)…** — copie du dossier « commande » vers un dossier au choix : partage réseau du NAS (\\\\NAS\\dossier ou lecteur réseau), dossier kDrive synchronisé, clé USB… ; à la demande ou automatiquement après chaque nouveau bulletin rangé.
+**Déclaration de grève (formulaire DII) : remplir et envoyer (PC et Android)**
+- Planning : bouton **Déclaration de grève (DII)** dans le détail du jour (téléphone), et clic droit sur un jour › **Déclaration de grève (DII)…** ou Fichier › Déclaration de grève (DII)… (PC).
+- Le « Cadre réservé à l'agent » du formulaire se remplit : préavis, **partie 1** (intention de participer à la grève : date, heure, lieu, date) et/ou **partie 2** (suite à la DII n°…, renoncer ou reprendre le travail, date, heure).
+- Pré-remplis : nom et prénom d'après le planning, date du jour choisi, heure de prise de service de ce jour, date du jour. CP, entité, lieu, destinataire et message sont gardés pour la fois suivante.
+- **Signature** : dessinée au doigt sur le téléphone (gardée si on le souhaite) ; image choisie sur le PC. Elle est posée dans le cadre « Signature » de chaque partie remplie.
+- **Envoi** au destinataire indiqué, avec le formulaire rempli en pièce jointe : directement par l'application (version « mail », boîte réglée), sinon par l'application mail (téléphone : PDF déjà joint ; PC : fichier à joindre, dossier ouvert). **Enregistrer le PDF** aussi possible.
+- Option : marquer ce jour comme jour de grève dans le planning.
+- Le formulaire vierge n'est **pas** fourni avec l'application : on le choisit une fois (PDF reçu de l'établissement), il reste sur l'appareil.
 
