@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.9.5** (28/10/2026).
+Dernière version : **2.9.6** (30/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,14 +14,12 @@ Dernière version : **2.9.5** (28/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.9.5
+## Nouveautés de la version 2.9.6
 
 
-**Partage du planning : NAS joint par son adresse IP (Android)**
-- Avec l'adresse IP du NAS (ou son certificat d'origine), l'envoi échouait : « certificat du serveur non reconnu ». Let's Encrypt ne délivre pas de certificat pour une adresse IP.
-- L'application propose maintenant de **faire confiance au certificat du NAS** : elle affiche son empreinte SHA-256 ; une fois accepté, seul CE certificat est accepté pour ce serveur. Un autre certificat à la même adresse est refusé, et la question est reposée.
-- Rien n'est envoyé (ni identifiant, ni mot de passe, ni planning) tant que le certificat n'est pas accepté.
-- Réglages › Partage du planning : l'empreinte acceptée est affichée, pour comparer avec l'autre téléphone, avec un bouton « Ne plus faire confiance ». Changer l'adresse du serveur oublie le certificat accepté.
-- Même fonctionnement sur le téléphone en lecture.
-- Programme PC : aucun changement.
+**Commandes par mail : un troisième expéditeur (PC et Android)**
+- Réglages › Commandes par mail (téléphone) et Fichier › Commandes par mail… (PC) : champ **Expéditeur 3**, en plus des deux premiers. Les bulletins de ces trois adresses sont relevés.
+- « Trouver les expéditeurs dans la boîte » : on peut maintenant en choisir **trois au plus** (téléphone : toucher les adresses ; PC : les cocher).
+- Téléphone : bouton Contacts aussi pour l'expéditeur 3.
+- Concerne les versions « mail » (`PlanningCommandes-mail.apk`, `PlanningPDF-mail.exe`) ; les réglages déjà enregistrés sont gardés.
 
