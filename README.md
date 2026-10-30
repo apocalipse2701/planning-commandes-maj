@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.9.7** (30/10/2026).
+Dernière version : **2.9.8** (30/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,12 +14,12 @@ Dernière version : **2.9.7** (30/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.9.7
+## Nouveautés de la version 2.9.8
 
 
-**Confirmation de réception : un message par expéditeur (PC et Android)**
-- Trois messages préenregistrés, un pour chacun des trois expéditeurs des commandes : réglage dans Réglages › Confirmation de réception (téléphone : boutons Message 1, 2, 3) et Fichier › Messages de confirmation… (PC : liste en haut de la fenêtre).
-- « Confirmer la réception » prend tout seul le message de l'expéditeur du mail reçu. La liste **Modèle** permet d'en prendre un autre, et le texte reste modifiable avant l'envoi.
-- Le message déjà réglé devient le message 1 ; tant qu'ils ne sont pas réglés, les messages 2 et 3 le reprennent.
-- Concerne les versions « mail ».
+**Confirmation de réception : bouton d'essai (PC et Android)**
+- Réglages › Confirmation de réception (téléphone) et Fichier › Messages de confirmation… (PC) : **Envoyer un essai**. Le message affiché part, rempli avec une commande d'exemple et marqué « [Essai] », par défaut à votre propre adresse.
+- Le résultat s'affiche en clair : envoyé (avec le serveur d'envoi et le port utilisés), ou la raison de l'échec (mot de passe refusé, serveur injoignable…).
+- Si l'envoi direct n'est pas possible, l'essai dit ce qui manque (adresse, mot de passe, serveur d'envoi SMTP) et ouvre l'application mail avec le message.
+- PC : correction de la fenêtre « Confirmer la réception » de la 2.9.7, où la liste Modèle et les boutons se superposaient.
 
