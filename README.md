@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.9.6** (30/10/2026).
+Dernière version : **2.9.7** (30/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,12 +14,12 @@ Dernière version : **2.9.6** (30/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.9.6
+## Nouveautés de la version 2.9.7
 
 
-**Commandes par mail : un troisième expéditeur (PC et Android)**
-- Réglages › Commandes par mail (téléphone) et Fichier › Commandes par mail… (PC) : champ **Expéditeur 3**, en plus des deux premiers. Les bulletins de ces trois adresses sont relevés.
-- « Trouver les expéditeurs dans la boîte » : on peut maintenant en choisir **trois au plus** (téléphone : toucher les adresses ; PC : les cocher).
-- Téléphone : bouton Contacts aussi pour l'expéditeur 3.
-- Concerne les versions « mail » (`PlanningCommandes-mail.apk`, `PlanningPDF-mail.exe`) ; les réglages déjà enregistrés sont gardés.
+**Confirmation de réception : un message par expéditeur (PC et Android)**
+- Trois messages préenregistrés, un pour chacun des trois expéditeurs des commandes : réglage dans Réglages › Confirmation de réception (téléphone : boutons Message 1, 2, 3) et Fichier › Messages de confirmation… (PC : liste en haut de la fenêtre).
+- « Confirmer la réception » prend tout seul le message de l'expéditeur du mail reçu. La liste **Modèle** permet d'en prendre un autre, et le texte reste modifiable avant l'envoi.
+- Le message déjà réglé devient le message 1 ; tant qu'ils ne sont pas réglés, les messages 2 et 3 le reprennent.
+- Concerne les versions « mail ».
 
