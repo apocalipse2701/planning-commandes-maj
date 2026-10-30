@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.9.8** (30/10/2026).
+Dernière version : **2.10.0** (30/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,12 +14,15 @@ Dernière version : **2.9.8** (30/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.9.8
+## Nouveautés de la version 2.10.0
 
 
-**Confirmation de réception : bouton d'essai (PC et Android)**
-- Réglages › Confirmation de réception (téléphone) et Fichier › Messages de confirmation… (PC) : **Envoyer un essai**. Le message affiché part, rempli avec une commande d'exemple et marqué « [Essai] », par défaut à votre propre adresse.
-- Le résultat s'affiche en clair : envoyé (avec le serveur d'envoi et le port utilisés), ou la raison de l'échec (mot de passe refusé, serveur injoignable…).
-- Si l'envoi direct n'est pas possible, l'essai dit ce qui manque (adresse, mot de passe, serveur d'envoi SMTP) et ouvre l'application mail avec le message.
-- PC : correction de la fenêtre « Confirmer la réception » de la 2.9.7, où la liste Modèle et les boutons se superposaient.
+**Sauvegarde des bulletins sur un NAS ou un kDrive (PC et Android)**
+- Tous les bulletins rangés, avec leurs dossiers année et mois, peuvent être copiés sur un autre support. Seuls les nouveaux ou modifiés partent ; rien n'est effacé à la destination.
+- **Téléphone** : Réglages › **Sauvegarde des bulletins** — NAS Synology, NAS QNAP, kDrive ou autre serveur WebDAV, en HTTPS.
+  - **Sauvegarder maintenant**, **Tout renvoyer**, ou sauvegarde automatique après chaque nouveau bulletin.
+  - **Reprendre le serveur du partage du planning** recopie l'adresse, le compte et le certificat déjà réglés.
+  - Certificat d'origine du NAS ou adresse IP : « Faire confiance à ce certificat », comme pour le partage.
+  - Bouton **Sauvegarder sur le NAS** dans Commandes › Bulletins rangés.
+- **PC** : Fichier › **Sauvegarder les bulletins (NAS, kDrive…)…** — copie du dossier « commande » vers un dossier au choix : partage réseau du NAS (\\\\NAS\\dossier ou lecteur réseau), dossier kDrive synchronisé, clé USB… ; à la demande ou automatiquement après chaque nouveau bulletin rangé.
 
