@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.11.2** (31/10/2026).
+Dernière version : **2.12.0** (31/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,12 +14,21 @@ Dernière version : **2.11.2** (31/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.11.2
+## Nouveautés de la version 2.12.0
 
 
-**Déclaration de grève (DII) : accusé de réception (PC et Android)**
-- Case **Demander un accusé de réception** (cochée par défaut, choix gardé) lors de l'envoi de la DII.
-- Envoi direct (version « mail ») : **avis de remise** demandé au serveur d'envoi quand il le permet (DSN) et **accusé de lecture** demandé au destinataire (sa messagerie lui propose de le renvoyer). Les deux arrivent dans votre boîte mail.
-- Après l'envoi, la date et l'heure d'envoi sont affichées, avec ce qui a été demandé.
-- Envoi par l'application mail ou la messagerie du PC : l'accusé se demande dans les options de cette application.
+**Suivi des DII envoyées : l'application prévient quand l'accusé de réception arrive (PC et Android)**
+- Chaque DII envoyée directement par l'application est gardée avec son identifiant de message. Pendant 30 jours, la boîte de réception est fouillée (lecture seule) pour retrouver :
+  - l'**avis de remise** du serveur (ou un **échec** de remise, ou un retard) ;
+  - l'**accusé de lecture** du destinataire ;
+  - une **réponse** du destinataire.
+- **Téléphone** :
+  - recherche à l'ouverture, puis toutes les heures en arrière-plan, et sur demande ;
+  - **notification** « DII du … : remise au destinataire / lue par le destinataire » ;
+  - le **détail du jour** affiche l'état : envoyée le …, remise le …, lue le …, avec un bouton **Vérifier les accusés de réception**.
+- **PC** :
+  - recherche avec chaque relevé de la boîte (toutes les heures), et toutes les 15 min pendant l'heure qui suit un envoi ;
+  - une fenêtre prévient de chaque nouvel accusé ;
+  - le détail du jour affiche l'état, et Fichier › **Suivi des DII envoyées…** liste les envois avec **Vérifier maintenant**.
+- Fonctionne avec la version « mail » (boîte réglée). L'avis de remise dépend du fournisseur ; l'accusé de lecture dépend du destinataire.
 
