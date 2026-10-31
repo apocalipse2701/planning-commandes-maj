@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.13.2** (31/10/2026).
+Dernière version : **2.13.3** (31/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,11 +14,9 @@ Dernière version : **2.13.2** (31/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.13.2
+## Nouveautés de la version 2.13.3
 
 
-**Version lecture : bouton Actualiser (Android)**
-- Le bouton **Exporter** est remplacé par **Actualiser** : il vérifie tout de suite si le planning partagé a changé. Le planning se met à jour (« Planning mis à jour »), ou le message « Aucune modification du planning » s'affiche, avec l'heure de vérification et celle du dernier envoi.
-- Les pastilles colorées qui résument le mois (codes, heures de service, nuits, dimanches, fériés, repos) ne sont plus affichées dans la version lecture.
-- Applications manuelle et mail : inchangées.
+**Version lecture : une seule ligne de boutons (Android)**
+- Compact, Page A4, Aujourd'hui et Actualiser sont sur la même ligne, ce qui laisse plus de place au planning. Les boutons sont un peu plus petits ; sur les écrans étroits, l'icône d'Actualiser est masquée.
 
