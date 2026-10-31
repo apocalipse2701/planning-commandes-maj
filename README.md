@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.12.0** (31/10/2026).
+Dernière version : **2.13.0** (31/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,21 +14,16 @@ Dernière version : **2.12.0** (31/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.12.0
+## Nouveautés de la version 2.13.0
 
 
-**Suivi des DII envoyées : l'application prévient quand l'accusé de réception arrive (PC et Android)**
-- Chaque DII envoyée directement par l'application est gardée avec son identifiant de message. Pendant 30 jours, la boîte de réception est fouillée (lecture seule) pour retrouver :
-  - l'**avis de remise** du serveur (ou un **échec** de remise, ou un retard) ;
-  - l'**accusé de lecture** du destinataire ;
-  - une **réponse** du destinataire.
-- **Téléphone** :
-  - recherche à l'ouverture, puis toutes les heures en arrière-plan, et sur demande ;
-  - **notification** « DII du … : remise au destinataire / lue par le destinataire » ;
-  - le **détail du jour** affiche l'état : envoyée le …, remise le …, lue le …, avec un bouton **Vérifier les accusés de réception**.
-- **PC** :
-  - recherche avec chaque relevé de la boîte (toutes les heures), et toutes les 15 min pendant l'heure qui suit un envoi ;
-  - une fenêtre prévient de chaque nouvel accusé ;
-  - le détail du jour affiche l'état, et Fichier › **Suivi des DII envoyées…** liste les envois avec **Vérifier maintenant**.
-- Fonctionne avec la version « mail » (boîte réglée). L'avis de remise dépend du fournisseur ; l'accusé de lecture dépend du destinataire.
+**Grève posée seulement à la réception de l'avis de l'établissement (PC et Android)**
+- À l'envoi d'une DII, le filigrane GRÈVE n'est plus posé tout de suite. Nouvelle case (envoi direct) : « Filigrane GRÈVE à la réception de l'avis de l'établissement (cadre partie 1 rempli) ».
+- L'application cherche dans la boîte mail le formulaire DII renvoyé par l'établissement : en pièce jointe d'une réponse, ou d'un message du destinataire.
+- Elle vérifie que la **partie 1 du « Cadre réservé à l'établissement »** est remplie intégralement : n° de DII, représentant, fonction, service, nom de l'agent, date et heure de réception, mode de réception, lieu et date.
+  - **Complète** : l'avis est noté et le **filigrane GRÈVE est posé** sur le jour déclaré, avec un message (notification sur le téléphone).
+  - **Incomplète**, ou formulaire imprimé, scanné ou aplati : pas de grève. L'application dit ce qui manque, avec **Ouvrir l'avis reçu** et **Avis vérifié : mettre la grève** pour valider soi-même.
+- Où le voir : détail du jour (téléphone et PC) et Fichier › Suivi des DII envoyées (PC).
+- Envoi par l'application mail ou la messagerie du PC : la grève se pose à la main (« Jour de grève ») à la réception de l'avis.
+- Le bouton « Jour de grève » reste disponible à tout moment.
 
