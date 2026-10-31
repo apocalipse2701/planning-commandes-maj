@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.11.0** (30/10/2026).
+Dernière version : **2.11.1** (31/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,15 +14,11 @@ Dernière version : **2.11.0** (30/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.11.0
+## Nouveautés de la version 2.11.1
 
 
-**Déclaration de grève (formulaire DII) : remplir et envoyer (PC et Android)**
-- Planning : bouton **Déclaration de grève (DII)** dans le détail du jour (téléphone), et clic droit sur un jour › **Déclaration de grève (DII)…** ou Fichier › Déclaration de grève (DII)… (PC).
-- Le « Cadre réservé à l'agent » du formulaire se remplit : préavis, **partie 1** (intention de participer à la grève : date, heure, lieu, date) et/ou **partie 2** (suite à la DII n°…, renoncer ou reprendre le travail, date, heure).
-- Pré-remplis : nom et prénom d'après le planning, date du jour choisi, heure de prise de service de ce jour, date du jour. CP, entité, lieu, destinataire et message sont gardés pour la fois suivante.
-- **Signature** : dessinée au doigt sur le téléphone (gardée si on le souhaite) ; image choisie sur le PC. Elle est posée dans le cadre « Signature » de chaque partie remplie.
-- **Envoi** au destinataire indiqué, avec le formulaire rempli en pièce jointe : directement par l'application (version « mail », boîte réglée), sinon par l'application mail (téléphone : PDF déjà joint ; PC : fichier à joindre, dossier ouvert). **Enregistrer le PDF** aussi possible.
-- Option : marquer ce jour comme jour de grève dans le planning.
-- Le formulaire vierge n'est **pas** fourni avec l'application : on le choisit une fois (PDF reçu de l'établissement), il reste sur l'appareil.
+**Déclaration de grève (DII) : destinataire, horaires du service, signature (PC et Android)**
+- **Destinataire** proposé : l'adresse mail écrite en haut à gauche du formulaire vierge, lue dans le PDF choisi (rien n'est inscrit dans l'application). Modifiable ; PC : bouton « Adresse du formulaire ».
+- **Horaires du service prévu** : bouton « Grève sur le service prévu : de PS à FS » (heures de la commande du jour). Partie 1 à la prise de service, partie 2 « reprendre le travail » à la fin de service, le lendemain pour un service de nuit. Heures toujours modifiables à la main ; la reprise propose la fin de service par défaut.
+- **Signature** : cadre de dessin plus grand sur le téléphone ; sur le PC, **Dessiner…** à la souris ou au stylet (en plus d'une image). Signature rognée au trait et posée un peu plus grande dans le formulaire.
 
