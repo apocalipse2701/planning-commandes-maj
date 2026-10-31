@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.11.1** (31/10/2026).
+Dernière version : **2.11.2** (31/10/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,11 +14,12 @@ Dernière version : **2.11.1** (31/10/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.11.1
+## Nouveautés de la version 2.11.2
 
 
-**Déclaration de grève (DII) : destinataire, horaires du service, signature (PC et Android)**
-- **Destinataire** proposé : l'adresse mail écrite en haut à gauche du formulaire vierge, lue dans le PDF choisi (rien n'est inscrit dans l'application). Modifiable ; PC : bouton « Adresse du formulaire ».
-- **Horaires du service prévu** : bouton « Grève sur le service prévu : de PS à FS » (heures de la commande du jour). Partie 1 à la prise de service, partie 2 « reprendre le travail » à la fin de service, le lendemain pour un service de nuit. Heures toujours modifiables à la main ; la reprise propose la fin de service par défaut.
-- **Signature** : cadre de dessin plus grand sur le téléphone ; sur le PC, **Dessiner…** à la souris ou au stylet (en plus d'une image). Signature rognée au trait et posée un peu plus grande dans le formulaire.
+**Déclaration de grève (DII) : accusé de réception (PC et Android)**
+- Case **Demander un accusé de réception** (cochée par défaut, choix gardé) lors de l'envoi de la DII.
+- Envoi direct (version « mail ») : **avis de remise** demandé au serveur d'envoi quand il le permet (DSN) et **accusé de lecture** demandé au destinataire (sa messagerie lui propose de le renvoyer). Les deux arrivent dans votre boîte mail.
+- Après l'envoi, la date et l'heure d'envoi sont affichées, avec ce qui a été demandé.
+- Envoi par l'application mail ou la messagerie du PC : l'accusé se demande dans les options de cette application.
 
