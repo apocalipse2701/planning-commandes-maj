@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.15.5** (09/11/2026).
+Dernière version : **2.15.6** (09/11/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,11 +14,10 @@ Dernière version : **2.15.5** (09/11/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.15.5
+## Nouveautés de la version 2.15.6
 
 
-**Anciennes WebView : bouton « Enregistrer » caché sous la barre d'onglets**
-- La marge du bas de la page (padding-block avec env()) n'était pas comprise par Chrome 55. Le bas de chaque page de réglage, dont le bouton **Enregistrer** du partage, restait sous la barre Planning / Réglages. Des marges compatibles sont maintenant indiquées en premier.
-- Même correction pour la fenêtre du bas (feuilles), les messages (toasts) et les grands boutons.
-- Espacement des boutons d'une même ligne sur les anciennes WebView.
+**Anciennes WebView, petite tablette (601 × 962) : champs de réglage sur une colonne**
+- Sans grille CSS, les champs prévus sur une seule colonne (partage, sauvegarde NAS, mail…) se mettaient côte à côte avec leurs explications, illisibles. Ils sont de nouveau les uns sous les autres, et les explications sur toute la largeur. Les champs sur deux colonnes de la fenêtre DII restent sur deux colonnes.
+- Vérifié en 601 × 962 et en 962 × 601 : pas de défilement de côté, calendrier sur 7 colonnes, bouton Enregistrer au-dessus de la barre d'onglets.
 
