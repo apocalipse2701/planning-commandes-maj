@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.15.3** (09/11/2026).
+Dernière version : **2.15.4** (09/11/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,15 +14,11 @@ Dernière version : **2.15.3** (09/11/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.15.3
+## Nouveautés de la version 2.15.4
 
 
-**Android 6 / anciennes tablettes : boutons sans effet (Android)**
-- Cause : une expression de recherche de lettres accentuées (`\p{L}`) que les anciennes WebView ne comprennent pas. Tout le script de l'application était refusé, donc aucun bouton ne répondait. Elle est remplacée par une liste de lettres (A-Z, accents français).
-- Le script de l'application et les bibliothèques PDF sont maintenant réécrits pour les WebView anciennes (Chrome 51 et plus, 2016) :
-  - syntaxe récente transformée ;
-  - pdf.js chargé en scripts classiques (sans module) ;
-  - fonctions manquantes ajoutées.
-- Si une erreur survient malgré tout, un bandeau rouge l'affiche en bas de l'écran avec la version de la WebView (à transmettre pour diagnostic).
-- Fond des fenêtres et filigrane GRÈVE : positionnement compatible avec les anciennes WebView.
+**Android 6 / WebView Chrome 55 (tablette sans mise à jour possible)**
+- Corrige l'erreur « replaceChildren is not a function », affichée par le bandeau d'erreur sur la tablette : les fonctions de page récentes manquantes sont ajoutées (replaceChildren, toggleAttribute…).
+- Copie profonde complète (structuredClone) pour la lecture des PDF sur les anciennes WebView. Sans elle, les bulletins n'étaient pas lus.
+- Mises en page de remplacement quand la WebView ne connaît pas la grille CSS (Chrome < 57) : calendrier compact, onglets, détail du jour, champs, aide au paramétrage.
 
