@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.15.4** (09/11/2026).
+Dernière version : **2.15.5** (09/11/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,11 +14,11 @@ Dernière version : **2.15.4** (09/11/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.15.4
+## Nouveautés de la version 2.15.5
 
 
-**Android 6 / WebView Chrome 55 (tablette sans mise à jour possible)**
-- Corrige l'erreur « replaceChildren is not a function », affichée par le bandeau d'erreur sur la tablette : les fonctions de page récentes manquantes sont ajoutées (replaceChildren, toggleAttribute…).
-- Copie profonde complète (structuredClone) pour la lecture des PDF sur les anciennes WebView. Sans elle, les bulletins n'étaient pas lus.
-- Mises en page de remplacement quand la WebView ne connaît pas la grille CSS (Chrome < 57) : calendrier compact, onglets, détail du jour, champs, aide au paramétrage.
+**Anciennes WebView : bouton « Enregistrer » caché sous la barre d'onglets**
+- La marge du bas de la page (padding-block avec env()) n'était pas comprise par Chrome 55. Le bas de chaque page de réglage, dont le bouton **Enregistrer** du partage, restait sous la barre Planning / Réglages. Des marges compatibles sont maintenant indiquées en premier.
+- Même correction pour la fenêtre du bas (feuilles), les messages (toasts) et les grands boutons.
+- Espacement des boutons d'une même ligne sur les anciennes WebView.
 
