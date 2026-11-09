@@ -1,6 +1,6 @@
 # Planning Commandes — mises à jour
 
-Dernière version : **2.15.1** (09/11/2026).
+Dernière version : **2.15.2** (09/11/2026).
 
 | | Version manuelle | Version « mail » (commandes relevées dans la boîte mail) |
 |---|---|---|
@@ -14,12 +14,10 @@ Dernière version : **2.15.1** (09/11/2026).
 Une fois installées, l'application et le programme PC se mettent à jour d'eux-mêmes à partir d'ici.
 Toutes les versions : [Releases](https://github.com/apocalipse2701/planning-commandes-maj/releases).
 
-## Nouveautés de la version 2.15.1
+## Nouveautés de la version 2.15.2
 
 
-**Android 6 (anciennes tablettes)**
-- L'application s'installe maintenant à partir d'**Android 6.0**, au lieu d'Android 7.0. Le message « Erreur d'analyse du package » apparaissait sur Android 6.
-- Les fonctions récentes utilisées par la lecture des PDF (pdf.js) et le formulaire DII sont ajoutées quand l'ancienne WebView ne les a pas.
-- Conseil : sur une vieille tablette, mettez à jour **Android System WebView** (et Chrome) dans le Play Store.
-- Contrôle de compatibilité Android 6 ajouté à la fabrication.
+**Android 6 : deux corrections repérées par le contrôle de compatibilité**
+- Mise à jour de l'application : la taille du téléchargement est lue d'une façon compatible avec Android 6 (sans cela, plantage à l'installation d'une nouvelle version).
+- Partage du planning et sauvegarde sur NAS / kDrive : la vérification du nom du serveur se fait après la connexion sur Android 6, avec la même sécurité (sans cela, échec de connexion).
 
